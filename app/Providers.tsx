@@ -52,10 +52,10 @@ const provider = ({
       <QueryClientProvider client={queryClient}>
         <RainbowKitProvider>
         <div className="flex justify-stretch">
-                <div>
+                <div className='hidden lg:block lg:w-1/4'>
                  <SideNav/>
                 </div>
-                <div className="w-4/6">
+                <div className="w-full lg:w-4/6">
                 {children}
                 </div>
               </div>
